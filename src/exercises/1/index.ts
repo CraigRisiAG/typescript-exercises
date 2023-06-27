@@ -1,25 +1,6 @@
 /*
 
-Welcome to:
-
-    ................................................................
-    .                                                              .
-    .     ####################    ####################      E      .
-    .     ####################    ####################      X      .
-    .             ####            ####                      E      .
-    .             ####            ####                      R      .
-    .             ####            ####################      C      .
-    .             ####                            ####      I      .
-    .             ####                            ####      S      .
-    .             ####            ####################      E      .
-    .             ####            ####################      S      .
-    .                                                              .
-    ................................................................
-
-    The goal: Let everyone play with many different TypeScript features
-    and get an overview of TypeScript capabilities and principles.
-
-    Things to cover:
+    Outline of what the exercises offer:
 
         1. Basic typing.
         2. Refining types.
@@ -34,10 +15,8 @@ Welcome to:
 
         1. Avoid using "any" type at all costs.
         2. Difficulty quickly grows one exercise after another.
-        3. Feel free to send pull requests if you've come up
-           with improvements!
-        4. Provide feedback to the creator of these exercises.
-        5. Enjoy.
+        3. Everyone learns at their own pace and there is no competition to be better than others around you
+        4. Have fun. This is your time to learn
 
 Brief UI guide:
 
@@ -60,17 +39,7 @@ Brief UI guide:
     |               |                                              |
     +---------------+----------------------------------------------+
 
-Intro:
-
-    We are starting a small community of users. For performance
-    reasons we have decided to store all users right in the code.
-    This way we can provide our developers with more
-    user-interaction opportunities. With user-related data, at least.
-    All the GDPR-related issues will be solved some other day.
-    This would be the basis for our future experiments during
-    these exercises.
-
-Exercise:
+Exercise 1:
 
     Given the data, define the interface "User" and use it accordingly.
 
@@ -80,14 +49,14 @@ export type User = unknown;
 
 export const users: unknown[] = [
     {
-        name: 'Max Mustermann',
-        age: 25,
-        occupation: 'Chimney sweep'
+        name: 'Thabo Bester',
+        age: 35,
+        occupation: 'Writer'
     },
     {
-        name: 'Kate Müller',
+        name: 'Kate Mokoena',
         age: 23,
-        occupation: 'Astronaut'
+        occupation: 'Architect'
     }
 ];
 
