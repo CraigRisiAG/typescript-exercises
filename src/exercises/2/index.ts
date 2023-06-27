@@ -1,19 +1,9 @@
 /*
 
-Intro:
-
-    All 2 users liked the idea of the community. We should go
-    forward and introduce some order. We are in Germany after all.
-    Let's add a couple of admins.
-
-    Initially, we only had users in the in-memory database. After
-    introducing Admins, we need to fix the types so that
-    everything works well together.
-
 Exercise:
 
-    Type "Person" is missing, please define it and use
-    it in persons array and logPerson function in order to fix
+    The type "Person" is missing, please define it and use
+    it in the persons' array and logPerson function in order to fix
     all the TS errors.
 
 */
@@ -34,24 +24,24 @@ export type Person = unknown;
 
 export const persons: User[] /* <- Person[] */ = [
     {
-        name: 'Max Mustermann',
-        age: 25,
-        occupation: 'Chimney sweep'
+        name: 'Tony Stark',
+        age: 45,
+        occupation: 'Iron Man'
     },
     {
-        name: 'Jane Doe',
-        age: 32,
-        role: 'Administrator'
+        name: 'Bruce Wayne',
+        age: 38,
+        role: 'Batman'
     },
     {
-        name: 'Kate Müller',
-        age: 23,
-        occupation: 'Astronaut'
+        name: 'Natasha Romanoff',
+        age: 35,
+        occupation: 'Black Widow'
     },
     {
-        name: 'Bruce Willis',
-        age: 64,
-        role: 'World saver'
+        name: 'Diana Prince',
+        age: ???,
+        role: 'Wonder Woman'
     }
 ];
 
