@@ -1,10 +1,5 @@
 /*
 
-Intro:
-
-    Filtering requirements have grown. We need to be
-    able to filter any kind of Persons.
-
 Exercise:
 
     Fix typing for the filterPersons so that it can filter users
@@ -44,12 +39,12 @@ interface Admin {
 export type Person = User | Admin;
 
 export const persons: Person[] = [
-    { type: 'user', name: 'Max Mustermann', age: 25, occupation: 'Chimney sweep' },
-    { type: 'admin', name: 'Jane Doe', age: 32, role: 'Administrator' },
-    { type: 'user', name: 'Kate Müller', age: 23, occupation: 'Astronaut' },
-    { type: 'admin', name: 'Bruce Willis', age: 64, role: 'World saver' },
-    { type: 'user', name: 'Wilson', age: 23, occupation: 'Ball' },
-    { type: 'admin', name: 'Agent Smith', age: 23, role: 'Anti-virus engineer' }
+    { type: 'user', name: 'Tony Stark', age: 45, occupation: 'Iron Man' },
+    { type: 'admin', name: 'Bruce Wayne', age: 38, role: 'Batman' },
+    { type: 'user', name: 'Natasha Romanoff', age: 35, occupation: 'Black Widow' },
+    { type: 'admin', name: 'Diana Prince', age: 27, role: 'Wonder Woman'}, 
+    { type: 'user', name: 'T'Challa', age: 34, role: 'Black Panther' },
+    { type: 'admin', name: 'Nick Fury', age: 64, role: 'The Big Boss' },
 ];
 
 export function logPerson(person: Person) {
@@ -69,16 +64,16 @@ export function filterPersons(persons: Person[], personType: string, criteria: u
         });
 }
 
-export const usersOfAge23 = filterPersons(persons, 'user', { age: 23 });
-export const adminsOfAge23 = filterPersons(persons, 'admin', { age: 23 });
+export const usersOfAge27 = filterPersons(persons, 'user', { age: 27 });
+export const adminsOfAge27 = filterPersons(persons, 'admin', { age: 27 });
 
-console.log('Users of age 23:');
-usersOfAge23.forEach(logPerson);
+console.log('Users of age 27:');
+usersOfAge27.forEach(logPerson);
 
 console.log();
 
-console.log('Admins of age 23:');
-adminsOfAge23.forEach(logPerson);
+console.log('Admins of age 27:');
+adminsOfAge27.forEach(logPerson);
 
 // In case you are stuck:
 // https://www.typescriptlang.org/docs/handbook/2/functions.html#function-overloads
