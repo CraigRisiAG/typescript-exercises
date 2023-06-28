@@ -24,28 +24,29 @@ interface Admin {
 
 export type Person = User | Admin;
 
-export const persons: Person[] = [
+export const persons: User[] /* <- Person[] */ = [
     {
-        name: 'Max Mustermann',
-        age: 25,
-        occupation: 'Chimney sweep'
+        name: 'Tony Stark',
+        age: 45,
+        occupation: 'Iron Man'
     },
     {
-        name: 'Jane Doe',
-        age: 32,
-        role: 'Administrator'
+        name: 'Bruce Wayne',
+        age: 38,
+        role: 'Batman'
     },
     {
-        name: 'Kate Müller',
-        age: 23,
-        occupation: 'Astronaut'
+        name: 'Natasha Romanoff',
+        age: 35,
+        occupation: 'Black Widow'
     },
     {
-        name: 'Bruce Willis',
-        age: 64,
-        role: 'World saver'
+        name: 'Diana Prince',
+        age: ???,
+        role: 'Wonder Woman'
     }
 ];
+
 
 export function logPerson(person: Person) {
     let additionalInformation: string;
