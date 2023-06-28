@@ -1,24 +1,5 @@
 /*
 
-Intro:
-
-    PowerUsers idea was bad. Once those users got
-    extended permissions, they started bullying others
-    and we lost a lot of great users.
-    As a response we spent all the remaining money
-    on the marketing and got even more users.
-    We need to start preparing to move everything to a
-    real database. For now we just do some mocks.
-
-    The server API format was decided to be the following:
-
-    In case of success: { status: 'success', data: RESPONSE_DATA }
-    In case of error: { status: 'error', error: ERROR_MESSAGE }
-
-    The API engineer started creating types for this API and
-    quickly figured out that the amount of types needed to be
-    created is too big.
-
 Exercise:
 
     Remove UsersApiResponse and AdminsApiResponse types
@@ -44,13 +25,15 @@ interface Admin {
 type Person = User | Admin;
 
 const admins: Admin[] = [
-    { type: 'admin', name: 'Jane Doe', age: 32, role: 'Administrator' },
-    { type: 'admin', name: 'Bruce Willis', age: 64, role: 'World saver' }
+    { type: 'admin', name: 'Bruce Wayne', age: 38, role: 'Batman' },
+    { type: 'admin', name: 'Diana Prince', age: 27, role: 'Wonder Woman'}, 
+    { type: 'admin', name: 'Nick Fury', age: 64, role: 'The Big Boss' }
 ];
 
 const users: User[] = [
-    { type: 'user', name: 'Max Mustermann', age: 25, occupation: 'Chimney sweep' },
-    { type: 'user', name: 'Kate Müller', age: 23, occupation: 'Astronaut' }
+    { type: 'user', name: 'Tony Stark', age: 45, occupation: 'Iron Man' },
+    { type: 'user', name: 'Natasha Romanoff', age: 35, occupation: 'Black Widow' },
+    { type: 'user', name: 'T'Challa', age: 34, role: 'Black Panther' }
 ];
 
 export type ApiResponse<T> = unknown;
