@@ -1,20 +1,5 @@
 /*
 
-Intro:
-
-    For some unknown reason most of our developers left
-    the company. We need to actively hire now.
-    In the media we've read that companies that invent
-    and publish new technologies attract more potential
-    candidates. We need to use this opportunity and
-    invent and publish some npm packages. Following the
-    new trend of functional programming in JS we
-    decided to develop a functional utility library.
-    This will put us on the bleading edge since we are
-    pretty much sure no one else did anything similar.
-    We also provided some jsdoc along with the
-    functions, but it might sometimes be inaccurate.
-
 Exercise:
 
     Provide proper typing for the specified functions.
