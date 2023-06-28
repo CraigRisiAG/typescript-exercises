@@ -47,19 +47,17 @@ interface Admin {
 type Person = User | Admin;
 
 const admins: Admin[] = [
-    { type: 'admin', name: 'Jane Doe', age: 32, role: 'Administrator' },
-    { type: 'admin', name: 'Bruce Willis', age: 64, role: 'World saver' },
-    { type: 'admin', name: 'Steve', age: 40, role: 'Steve' },
-    { type: 'admin', name: 'Will Bruces', age: 30, role: 'Overseer' },
-    { type: 'admin', name: 'Superwoman', age: 28, role: 'Customer support' }
+    { type: 'admin', name: 'Bruce Wayne', age: 38, role: 'Batman' },
+    { type: 'admin', name: 'Diana Prince', age: 27, role: 'Wonder Woman'}, 
+    { type: 'admin', name: 'Nick Fury', age: 64, role: 'The Big Boss' },
+    { type: 'admin', name: 'Bruce Banner', age: 42, role: 'The Hulk' }
 ];
 
 const users: User[] = [
-    { type: 'user', name: 'Max Mustermann', age: 25, occupation: 'Chimney sweep' },
-    { type: 'user', name: 'Kate Müller', age: 23, occupation: 'Astronaut' },
-    { type: 'user', name: 'Moses', age: 70, occupation: 'Desert guide' },
-    { type: 'user', name: 'Superman', age: 28, occupation: 'Ordinary person' },
-    { type: 'user', name: 'Inspector Gadget', age: 31, occupation: 'Undercover' }
+    { type: 'user', name: 'Tony Stark', age: 45, occupation: 'Iron Man' },
+    { type: 'user', name: 'Natasha Romanoff', age: 35, occupation: 'Black Widow' }, 
+    { type: 'user', name: 'T'Challa', age: 34, role: 'Black Panther' },
+    { type: 'user', name: 'Barry Allen', age: 22, role: 'The Flash' }
 ];
 
 const isAdmin = (person: Person): person is Admin => person.type === 'admin';
