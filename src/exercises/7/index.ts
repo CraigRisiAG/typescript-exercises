@@ -38,13 +38,13 @@ function logAdmin(admin: Admin) {
 const admins: Admin[] = [
     { type: 'admin', name: 'Bruce Wayne', age: 38, role: 'Batman' },
     { type: 'admin', name: 'Diana Prince', age: 27, role: 'Wonder Woman'}, 
-    { type: 'admin', name: 'Nick Fury', age: 64, role: 'The Big Boss' },
+    { type: 'admin', name: 'Nick Fury', age: 64, role: 'The Big Boss' }
 ];
 
 const users: User[] = [
     { type: 'user', name: 'Tony Stark', age: 45, occupation: 'Iron Man' },
     { type: 'user', name: 'Natasha Romanoff', age: 35, occupation: 'Black Widow' }, 
-    { type: 'user', name: 'T'Challa', age: 34, role: 'Black Panther' },
+    { type: 'user', name: 'T'Challa', age: 34, role: 'Black Panther' }
 ];
 
 export function swap(v1, v2) {
