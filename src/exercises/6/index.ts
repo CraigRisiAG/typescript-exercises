@@ -44,7 +44,7 @@ export const persons: Person[] = [
     { type: 'user', name: 'Natasha Romanoff', age: 35, occupation: 'Black Widow' },
     { type: 'admin', name: 'Diana Prince', age: 27, role: 'Wonder Woman'}, 
     { type: 'user', name: 'T'Challa', age: 34, role: 'Black Panther' },
-    { type: 'admin', name: 'Nick Fury', age: 64, role: 'The Big Boss' },
+    { type: 'admin', name: 'Nick Fury', age: 64, role: 'The Big Boss' }
 ];
 
 export function logPerson(person: Person) {
