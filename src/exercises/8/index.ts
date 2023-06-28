@@ -1,13 +1,5 @@
 /*
 
-Intro:
-
-    Project grew and we ended up in a situation with
-    some users starting to have more influence.
-    Therefore, we decided to create a new person type
-    called PowerUser which is supposed to combine
-    everything User and Admin have.
-
 Exercise:
 
     Define type PowerUser which should have all fields
@@ -36,16 +28,18 @@ type PowerUser = unknown;
 export type Person = User | Admin | PowerUser;
 
 export const persons: Person[] = [
-    { type: 'user', name: 'Max Mustermann', age: 25, occupation: 'Chimney sweep' },
-    { type: 'admin', name: 'Jane Doe', age: 32, role: 'Administrator' },
-    { type: 'user', name: 'Kate Müller', age: 23, occupation: 'Astronaut' },
-    { type: 'admin', name: 'Bruce Willis', age: 64, role: 'World saver' },
+    { type: 'user', name: 'Tony Stark', age: 45, occupation: 'Iron Man' },
+    { type: 'admin', name: 'Bruce Wayne', age: 38, role: 'Batman' },
+    { type: 'user', name: 'Natasha Romanoff', age: 35, occupation: 'Black Widow' },
+    { type: 'admin', name: 'Diana Prince', age: 27, role: 'Wonder Woman'}, 
+    { type: 'user', name: 'T'Challa', age: 34, role: 'Black Panther' },
+    { type: 'admin', name: 'Nick Fury', age: 64, role: 'The Big Boss' },
     {
         type: 'powerUser',
-        name: 'Nikki Stone',
-        age: 45,
+        name: 'Clark Kent',
+        age: 135,
         role: 'Moderator',
-        occupation: 'Cat groomer'
+        occupation: 'Super Man'
     }
 ];
 
