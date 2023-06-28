@@ -1,18 +1,5 @@
 /*
 
-Intro:
-
-    Filtering was completely removed from the project.
-    It turned out that this feature was just not needed
-    for the end-user and we spent a lot of time just because
-    our office manager told us to do so. Next time we should
-    instead listen to the product management.
-
-    Anyway we have a new plan. CEO's friend Nick told us
-    that if we randomly swap user names from time to time
-    in the community, it would be very funny and the project
-    would definitely succeed!
-
 Exercise:
 
     Implement swap which receives 2 persons and returns them in
@@ -49,33 +36,15 @@ function logAdmin(admin: Admin) {
 }
 
 const admins: Admin[] = [
-    {
-        type: 'admin',
-        name: 'Will Bruces',
-        age: 30,
-        role: 'Overseer'
-    },
-    {
-        type: 'admin',
-        name: 'Steve',
-        age: 40,
-        role: 'Steve'
-    }
+    { type: 'admin', name: 'Bruce Wayne', age: 38, role: 'Batman' },
+    { type: 'admin', name: 'Diana Prince', age: 27, role: 'Wonder Woman'}, 
+    { type: 'admin', name: 'Nick Fury', age: 64, role: 'The Big Boss' },
 ];
 
 const users: User[] = [
-    {
-        type: 'user',
-        name: 'Moses',
-        age: 70,
-        occupation: 'Desert guide'
-    },
-    {
-        type: 'user',
-        name: 'Superman',
-        age: 28,
-        occupation: 'Ordinary person'
-    }
+    { type: 'user', name: 'Tony Stark', age: 45, occupation: 'Iron Man' },
+    { type: 'user', name: 'Natasha Romanoff', age: 35, occupation: 'Black Widow' }, 
+    { type: 'user', name: 'T'Challa', age: 34, role: 'Black Panther' },
 ];
 
 export function swap(v1, v2) {
