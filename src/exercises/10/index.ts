@@ -1,16 +1,5 @@
 /*
 
-Intro:
-
-    We have asynchronous functions now, advanced technology.
-    This makes us a tech startup officially now.
-    But one of the consultants spoiled our dreams about
-    inevitable future IT leadership.
-    He said that callback-based asynchronicity is not
-    popular anymore and everyone should use Promises.
-    He promised that if we switch to Promises, this would
-    bring promising results.
-
 Exercise:
 
     We don't want to reimplement all the data-requesting
@@ -52,13 +41,15 @@ interface Admin {
 type Person = User | Admin;
 
 const admins: Admin[] = [
-    { type: 'admin', name: 'Jane Doe', age: 32, role: 'Administrator' },
-    { type: 'admin', name: 'Bruce Willis', age: 64, role: 'World saver' }
+    { type: 'admin', name: 'Bruce Wayne', age: 38, role: 'Batman' },
+    { type: 'admin', name: 'Diana Prince', age: 27, role: 'Wonder Woman'}, 
+    { type: 'admin', name: 'Nick Fury', age: 64, role: 'The Big Boss' }
 ];
 
 const users: User[] = [
-    { type: 'user', name: 'Max Mustermann', age: 25, occupation: 'Chimney sweep' },
-    { type: 'user', name: 'Kate Müller', age: 23, occupation: 'Astronaut' }
+    { type: 'user', name: 'Tony Stark', age: 45, occupation: 'Iron Man' },
+    { type: 'user', name: 'Natasha Romanoff', age: 35, occupation: 'Black Widow' }, 
+    { type: 'user', name: 'T'Challa', age: 34, role: 'Black Panther' }
 ];
 
 export type ApiResponse<T> = (
