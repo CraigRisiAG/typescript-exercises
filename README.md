@@ -5,8 +5,6 @@ Start your journey here: https://typescript-exercises.github.io/
 The goal: Let everyone play with many different TypeScript features
 and get an overview of TypeScript capabilities and principles.
 
-Sponsor me: https://github.com/sponsors/mdevils
-
 ## Things to cover
 
  1. Basic typing.
@@ -24,15 +22,6 @@ Sponsor me: https://github.com/sponsors/mdevils
 
  2. Difficulty quickly grows one exercise after another.
 
- 3. Feel free to send pull requests if you've come up
-    with improvements!
+ 3. Everyone learns at their own pace, so don't try and keep up with the person next to you
 
- 4. Provide feedback to the creator of these exercises.
-
- 5. Enjoy.
-
-## Contributing
-
- 1. Your contributions are welcome.
-
- 2. `yarn start` starts the development server.
+ 4. Have fun. This is your time to learn.
