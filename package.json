@@ -2,18 +2,8 @@
   "name": "typescript-exercises",
   "version": "0.1.0",
   "private": true,
-  "author": "Marat Dulin",
+  "author": "Original - Marat Dulin. Revisions - Craig Risi",
   "license": "MIT",
-  "funding": [
-    {
-      "type": "github",
-      "url": "https://github.com/sponsors/mdevils"
-    },
-    {
-      "type": "patreon",
-      "url": "https://www.patreon.com/mdevils"
-    }
-  ],
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.10",
     "@emotion/core": "^10.0.28",
