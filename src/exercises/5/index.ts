@@ -1,12 +1,5 @@
 /*
 
-Intro:
-
-    Time to filter the data! In order to be flexible
-    we filter users using a number of criteria and
-    return only those matching all of the criteria.
-    We don't need Admins yet, we only filter Users.
-
 Exercise:
 
     Without duplicating type structures, modify
@@ -38,37 +31,12 @@ interface Admin {
 export type Person = User | Admin;
 
 export const persons: Person[] = [
-    { type: 'user', name: 'Max Mustermann', age: 25, occupation: 'Chimney sweep' },
-    {
-        type: 'admin',
-        name: 'Jane Doe',
-        age: 32,
-        role: 'Administrator'
-    },
-    {
-        type: 'user',
-        name: 'Kate Müller',
-        age: 23,
-        occupation: 'Astronaut'
-    },
-    {
-        type: 'admin',
-        name: 'Bruce Willis',
-        age: 64,
-        role: 'World saver'
-    },
-    {
-        type: 'user',
-        name: 'Wilson',
-        age: 23,
-        occupation: 'Ball'
-    },
-    {
-        type: 'admin',
-        name: 'Agent Smith',
-        age: 23,
-        role: 'Administrator'
-    }
+    { type: 'user', name: 'Tony Stark', age: 45, occupation: 'Iron Man' },
+    { type: 'admin', name: 'Bruce Wayne', age: 38, role: 'Batman' },
+    { type: 'user', name: 'Natasha Romanoff', age: 35, occupation: 'Black Widow' },
+    { type: 'admin', name: 'Diana Prince', age: 27, role: 'Wonder Woman'}, 
+    { type: 'user', name: 'T'Challa', age: 34, role: 'Black Panther' },
+    { type: 'admin', name: 'Nick Fury', age: 64, role: 'The Big Boss' },
 ];
 
 export const isAdmin = (person: Person): person is Admin => person.type === 'admin';
