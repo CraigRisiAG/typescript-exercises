@@ -28,4 +28,4 @@ jobs:
         with:
           token: ${{ secrets.PAGES_UPDATE_TOKEN }}
           folder: build
-          repository-name: typescript-exercises/typescript-exercises.github.io
+          repository-name: accenture/typescript-exercises.github.io
